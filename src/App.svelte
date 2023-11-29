@@ -1,11 +1,8 @@
-<script lang="ts">
-
+<script>
+  import { Router, Route } from 'svelte-routing';
+  import Welcome from './views/Welcome.svelte';
+  export let url ='';
 </script>
-
-<main>
-  Kluska welcome screen
-</main>
-
-<style>
-
-</style>
+<Router {url}>
+    <Route path="/"><Welcome /></Route>
+</Router>
